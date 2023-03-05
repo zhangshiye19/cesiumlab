@@ -85,7 +85,7 @@ export default class CMap {
             // }))
             // 去除底部的ion标记
             this.instance.cesiumWidget.creditContainer.style.display = "none";
-            this.instance.clock.currentTime = new Cesium.JulianDate.addHours(this.instance.clock.currentTime,8,new Cesium.JulianDate());
+            this.instance.clock.currentTime = Cesium.JulianDate.addHours(this.instance.clock.currentTime,8,new Cesium.JulianDate());
         }
         return this.instance
     }
